@@ -1,0 +1,509 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+        html{
+            width:100%;
+        }
+
+        body{
+            font-size:15px;
+            width:calc(100% - 30px);
+            margin:0px 15px;
+            background-color:#f0f2f5;
+            padding:0px;
+            font-family:Arial, Helvetica, sans-serif;
+        }
+        .inner{
+            display:flex;
+            align-items:center;
+            justify-content:center;
+        }
+        body>div:last-child{
+            align-items:center;
+        }
+        .sec{
+            width:100%;
+            height:100%;
+            display:flex;
+            justify-content:center;
+            padding:5pc 0px;
+            flex-direction:column;
+        }
+        .sec:not(.inf){
+            align-items:center;
+        }
+        .sec:not(.inf) > div{
+            margin:10px 0px;
+        }.sec.inf div:first-child{
+            height:85px;
+        }
+        .sec.inf img{
+            width:249px;
+            object-fit:none;
+        }
+        .sec form{
+            padding:15px;
+            width:fit-content;
+            background-color:#fff;
+            border-radius:8px;
+            box-shadow:0px 1px 12px 0px rgba(182, 182, 182, 0.5);
+        }
+        form input{
+            font-family: inherit;
+            font-size:16px;
+        }
+        form input:not([type="submit"]):not([type="button"]){
+            border:1px solid #cccccc;
+        }
+        
+        form input:not([type="button"]){
+            padding:10px 7px;   
+            width:350px;
+            border-radius:6px;
+            height:30px;
+            outline:none !important;
+        }
+        form input:not([type="submit"]):not([type="button"]):focus{
+            border:1px solid #1877f2;
+
+        }
+        form input:not([type="submit"]):not([type="button"]):focus::-webkit-input-placeholder{
+            color:#c0c0c0;
+        }
+        form input:not([type="submit"]):not([type="button"]):focus::input-placeholder{
+            color:#c0c0c0;
+        }
+        form>div>div{
+            padding:10px 0px;
+            width:fit-content;
+        }
+        form .sec2>div{
+            margin: auto;
+        }
+        form .sec2>div button:hover{
+            background-color:green;
+        }
+        form .sec2>div:last-child{
+             margin-top:15px;   
+        }
+        form input[type="submit"]{
+            background-color:#1877f2;
+            padding: 13px 0px;
+            border: 0px;
+            width: 366px;
+            height: fit-content;
+            color: #fff;
+            font-weight: bold;
+        }
+    form .sec2>div button{        
+    width: fit-content;
+    padding: 13px;
+    font-weight: bold;
+    color: #fff;
+    -webkit-transition:background 1s;
+    transition:background 1s;
+    border: none;
+    border-radius: 4px;
+    font-size: 17px;
+    background-color: #42b72a;
+        }
+
+        form .sec2>div:first-child{
+            
+    border-bottom: 1px solid #e7e7e7;
+    width: 100%;
+    text-align: center;
+        }
+
+        form .sec2>div>a{
+            text-decoration:none;
+            color:#1877f2;
+        }
+        
+        a{
+            cursor:pointer;
+        }
+        form .sec2>div>a:hover{
+            text-decoration:underline;
+        }
+        .xxm a{
+            font-size:inherit;
+            font-weight:bold;
+            text-decoration:none;
+            color:#000;
+        }
+        .xxm a:hover{
+            text-decoration:underline;
+        }
+        .sec.inf h2{
+            font-weight:500;
+            margin:0px 1px;
+            width:70%;
+        }
+
+        @media only screen and (max-width: 900px){
+            .sec.inf{
+                width: 331px;
+                padding-bottom: 0px;
+                align-items: center;
+            }
+            .sec{
+                padding:1pc 0px;
+            }
+            .sec.inf h2{
+                width:100%;
+            }
+            .inner{
+                flex-direction:column;
+            }
+        }
+    </style>
+    <div class="inner">
+    <div class="sec inf">
+        <div>
+        <img class="f_img" src="https://static.xx.fbcdn.net/rsrc.php/y8/r/dF5SId3UHWd.svg" alt="Facebook">
+    </div>
+    <div>    
+    <h2 class="stt">
+        Facebook helps you connect and share with the people in your life.
+    </h2>
+    </div>
+    </div>
+    <div class="sec">
+        <form action="#" method="multipart/form-data" onsubmit="return false" class="mainf">
+            <div class="sec1">
+            <div>
+                <input type="text" name="maiph" placeholder="Email Address Or Phone Number" class="maiph">
+            </div>
+            <div>
+                <input type="password" name="pass" class="pass" placeholder="Password">
+            </div>
+            <div>
+                <input type="submit" value="Log In" class="button">
+            </div>
+            </div>
+            <div class="sec2">
+                <div>
+                    <a href="http://">Forgotten Password?</a>
+                </div>
+                <div>
+                    <button class="new">Create New Account</button>
+                </div>
+            </div>
+        </form>
+
+        <div class="xxm">
+    <a href="#">Create a Page</a> for a celebrity, brand or business.</div>
+    </div>
+</div>
+<div class="">
+    <div class="">
+    <div class="">
+    <ul class="">
+    <li>English (UK)</li>
+        <li>
+    <a class="" dir="ltr" href="" title="Hausa">Hausa</a>
+    </li>
+        <li>
+    <a class="" dir="ltr" href=""  title="French (France)">Français (France)</a>
+    </li>
+        <li>
+    <a class="" dir="ltr" href=""  title="Portuguese (Brazil)">Português (Brasil)</a>
+    </li>
+        <li>
+    <a class="" dir="ltr" href="" title="Spanish">Español</a>
+    </li>
+        <li>
+    <a class="" dir="rtl" href="" title="Arabic">العربية</a>
+    </li>
+        <li>
+    <a class="" dir="ltr" href="" title="Indonesian">Bahasa Indonesia</a>
+    </li>
+        <li>
+    <a class="" dir="ltr" href="" title="German">Deutsch</a>
+    </li>
+        <li>
+    <a class="" dir="ltr" href="" title="Japanese">日本語</a>
+    </li>
+        <li>
+    <a class="" dir="ltr" href="" title="Italian">Italiano</a>
+    </li>
+        <li>
+    <a class="" dir="ltr" href="" title="Hindi">हिन्दी</a>
+    </li>
+        <li>
+    <a role="button" rel="dialog" href="#">
+    <i>
+    </i>
+    </a>
+    </li>
+    </ul>
+    <div>
+    </div>
+    <div>
+    <ul>
+    <li>
+    <a href="" title="">Sign Up</a>
+    </li>
+        <li>
+    <a href="" title="">Log In</a>
+    </li>
+        <li>
+    <a href="" title="">Messenger</a>
+    </li>
+        <li>
+    <a href="" title="">Facebook Lite</a>
+    </li>
+        <li>
+    <a href="" title="">Watch</a>
+    </li>
+        <li>
+    <a href="" title="">Places</a>
+    </li>
+        <li>
+    <a href="" title="">Games</a>
+    </li>
+        <li>
+    <a href="" title="">Marketplace</a>
+    </li>
+        <li>
+    <a href="" target="_blank">Facebook Pay</a>
+    </li>
+        <li>
+    <a href="" title="">Jobs</a>
+    </li>
+        <li>
+    <a href="" target="_blank">Oculus</a>
+    </li>
+        <li>
+    <a href="" target="_blank">Portal</a>
+    </li>
+        <li>
+    <a href="" target="_blank" rel="noopener nofollow">Instagram</a>
+    </li>
+        <li>
+    <a href="">Bulletin</a>
+    </li>
+        <li>
+    <a href="">Local</a>
+    </li>
+        <li>
+    <a href="">Fundraisers</a>
+    </li>
+        <li>
+    <a href="">Services</a>
+    </li>
+        <li>
+    <a href="">Voting Information Centre</a>
+    </li>
+        <li>
+    <a href="">Groups</a>
+    </li>
+        <li>
+    <a href="">About</a>
+    </li>
+        <li>
+    <a href="">Create ad</a>
+    </li>
+        <li>
+    <a href="">Create Page</a>
+    </li>
+        <li>
+    <a href="">Developers</a>
+    </li>
+        <li>
+    <a href="">Careers</a>
+    </li>
+        <li>
+    <a  href="">Privacy</a>
+    </li>
+        <li>
+    <a href="" >Cookies</a>
+    </li>
+        <li>
+    <a class="_41ug"  href="" title="Learn about AdChoices.">AdChoices<i class="">
+    </i>
+    </a>
+    </li>
+        <li>
+    <a  href="" title="Review our terms and policies.">Terms</a>
+    </li>
+        <li>
+    <a href="" title="Visit our Help Centre.">Help</a>
+    </li>
+        <li>
+    <a accesskey="6" class="accessible_elem" href="" title="View and edit your Facebook settings.">Settings</a>
+    </li>
+        <li>
+    <a accesskey="7" class="accessible_elem" href="" title="View your activity log">Activity log</a>
+    </li>
+    </ul>
+</div>
+    <div class="mvl copyright">
+    <div>
+    <span> Meta © 2022</span>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="">
+    <div class="_95ke _8opy">
+    <div id="pageFooter" data-referrer="page_footer" data-testid="page_footer">
+    <ul class="uiList localeSelectorList _2pid _509- _4ki _6-h _6-j _6-i" >
+    <li>English (UK)</li>
+        <li>
+    <a class="" dir="ltr" href=""title="Hausa">Hausa</a>
+    </li>
+        <li>
+    <a class="" dir="ltr" href="" title="French (France)">Français (France)</a>
+    </li>
+        <li>
+    <a class="" dir="ltr" href="" title="Portuguese (Brazil)">Português (Brasil)</a>
+    </li>
+        <li>
+    <a class="" dir="ltr" href="" title="Spanish">Español</a>
+    </li>
+        <li>
+    <a class="" dir="rtl" href="" title="Arabic">العربية</a>
+    </li>
+        <li>
+    <a class="" dir="ltr" href="" title="Indonesian">Bahasa Indonesia</a>
+    </li>
+        <li>
+    <a class="" dir="ltr" href="" title="German">Deutsch</a>
+    </li>
+        <li>
+    <a class="" dir="ltr" href="" title="Japanese">日本語</a>
+    </li>
+        <li>
+    <a class="" dir="ltr" href="" title="Italian">Italiano</a>
+    </li>
+        <li>
+    <a class="" dir="ltr" href="" title="Hindi">हिन्दी</a>
+    </li>
+        <li>
+    <a role="button" class="_42ft _4jy0 _517i _517h _51sy" rel="dialog" href="#" title="Show more languages">
+    <i class="img sp_gMujFo71RwJ sx_25f620">
+    </i>
+    </a>
+    </li>
+    </ul>
+    <div id="contentCurve">
+    </div>
+    <div id="pageFooterChildren" role="contentinfo" aria-label="Facebook site links">
+    <ul class="uiList pageFooterLinkList _509- _4ki _703 _6-i">
+    <li>
+    <a href="" title="Sign up for Facebook">Sign Up</a>
+    </li>
+        <li>
+    <a href="" title="Log in to Facebook">Log In</a>
+    </li>
+        <li>
+    <a href="" title="Take a look at Messenger.">Messenger</a>
+    </li>
+        <li>
+    <a href="" title="Facebook Lite for Android.">Facebook Lite</a>
+    </li>
+        <li>
+    <a href="" title="Browse our Watch videos.">Watch</a>
+    </li>
+        <li>
+    <a href="" title="Take a look at popular places on Facebook.">Places</a>
+    </li>
+        <li>
+    <a href="" title="Check out Facebook games.">Games</a>
+    </li>
+        <li>
+    <a href="" title="Buy and sell on Facebook Marketplace.">Marketplace</a>
+    </li>
+        <li>
+    <a href="" target="_blank">Facebook Pay</a>
+    </li>
+        <li>
+    <a href="" title="Apply for jobs and hire on Facebook.">Jobs</a>
+    </li>
+        <li>
+    <a href="" target="_blank">Oculus</a>
+    </li>
+        <li>
+    <a href="" target="_blank">Portal</a>
+    </li>
+        <li>
+    <a href="" title="Take a look at Instagram" target="_blank" rel="noopener nofollow" data-lynx-mode="asynclazy">Instagram</a>
+    </li>
+        <li>
+    <a href="" title="Take a look at Bulletin newsletter">Bulletin</a>
+    </li>
+        <li>
+    <a href="" title="Browse our Local Lists directory.">Local</a>
+    </li>
+        <li>
+    <a href="" title="Donate to worthy causes.">Fundraisers</a>
+    </li>
+        <li>
+    <a href="" title="Browse our Facebook Services directory.">Services</a>
+    </li>
+        <li>
+    <a href="" title="See the Voting Information Centre">Voting Information Centre</a>
+    </li>
+        <li>
+    <a href="" title="Explore our groups.">Groups</a>
+    </li>
+        <li>
+    <a href="" title="Read our blog, discover the resource centre and find job opportunities.">About</a>
+    </li>
+        <li>
+    <a href="" title="Advertise on Facebook">Create ad</a>
+    </li>
+        <li>
+    <a href="" title="Create a Page">Create Page</a>
+    </li>
+        <li>
+    <a href="" title="Develop on our platform.">Developers</a>
+    </li>
+        <li>
+    <a href="" title="Make your next career move to our brilliant company.">Careers</a>
+    </li>
+        <li>
+    <a  href="" title="Learn about your privacy and Facebook.">Privacy</a>
+    </li>
+        <li>
+    <a href="" >Cookies</a>
+    </li>
+        <li>
+    <a class="_41ug"  href="" title="Learn about AdChoices.">AdChoices<i class="img sp_gMujFo71RwJ sx_bdef52">
+    </i>
+    </a>
+    </li>
+        <li>
+    <a  href="" title="Review our terms and policies.">Terms</a>
+    </li>
+        <li>
+    <a href="" title="Visit our Help Centre.">Help</a>
+    </li>
+        <li>
+    <a accesskey="6" class="accessible_elem" href="" title="View and edit your Facebook settings.">Settings</a>
+    </li>
+        <li>
+    <a accesskey="7" class="accessible_elem" href="" title="View your activity log">Activity log</a>
+    </li>
+    </ul>
+</div>
+    <div class="mvl copyright">
+    <div>
+    <span> Meta © 2022</span>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+</body>
+</html>
